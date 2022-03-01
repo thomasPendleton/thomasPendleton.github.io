@@ -60,7 +60,7 @@ header {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
+
   align-items: center;
 }
 .hero::after {
@@ -84,27 +84,30 @@ header {
   font-size: 2rem;
   text-align: center;
 }
-.profile{
-    padding-top: 40px;
-    display: flex;
-    justify-content: center;
-    width: 90vw;
+.profile {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
 }
-.image-container{
-    width: 40%;
-    margin: 0;
-    padding: 0;
-    max-width: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-.skills{
-    width: 60%;
-    margin-left: 40px;
-    color: white;
+.image-container {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .hero img {
-  max-height: 300px;
+  display: block;
+  max-width: 300px;
+}
+
+.skills {
+  width: 60%;
+  margin-left: 40px;
+  color: white;
+  font-size: 1em;
 }
 
 .learn-more {
@@ -129,10 +132,14 @@ header {
   .links {
     display: none;
   }
-  .hero img{
-      max-width: 150px;
+  .hero img {
+    max-width: 100px;
   }
-  .image-container{
-      max-height: 150px
+  .image-container {
+    max-width: 100px;
+  }
+  .skills {
+    font-size: 0.6rem;
+    margin-left: 10px;
   }
 }
