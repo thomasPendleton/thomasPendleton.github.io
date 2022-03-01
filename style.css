@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  background-color: darkorange;
+  margin: 0;
+  height: 80px;
+  border-bottom: 2px solid darkslategray;
+  display: flex;
+  width: 100%;
+  font-family: 'Fredoka', Helvetica, sans-serif;
+}
+
+.emblem-container {
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+.emblem-container i {
+  padding-right: 20px;
+  font-size: 2rem;
+}
+
+.links {
+  margin-left: auto;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+}
+.links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  padding: 0;
+}
+.links li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.links a:hover {
+  color: red;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.hero h1 {
+  margin: 0;
+  padding-top: 50px;
+  max-width: 500px;
+  font-family: 'Fredoka', Helvetica, sans-serif;
+  color: white;
+  z-index: 10;
+  font-size: 2rem;
+  text-align: center;
+}
+.profile {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+.image-container {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  max-width: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.hero img {
+  display: block;
+  max-width: 300px;
+}
+
+.skills {
+  width: 60%;
+  margin-left: 40px;
+  color: white;
+  font-size: 1em;
+}
+
+.learn-more {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  align-items: center;
+  color: rgb(71, 71, 71);
+  padding-bottom: 100px;
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 710px) {
+  .emblem-container {
+    width: 100%;
+  }
+  .name {
+    font-size: 1.3rem;
+  }
+  .links {
+    display: none;
+  }
+  .hero img {
+    max-width: 100px;
+  }
+  .image-container {
+    max-width: 100px;
+  }
+  .skills {
+    font-size: 0.6rem;
+    margin-left: 10px;
+  }
+}
